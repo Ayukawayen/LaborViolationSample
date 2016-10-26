@@ -75,9 +75,6 @@ chrome.runtime.sendMessage(
 );
 
 function getLastLeafNode(node) {
-	for(let i = node.childNodes.length-1;i>=0;--i) {
-		let childNode = node.childNodes[i];
-		if(childNode.nodeType == 1) return getLastLeafNode(childNode);
-	}
-	return node;
+	if(!node.lastElementChild) return node;
+	return getLastLeafNode(node.lastElementChild);
 };

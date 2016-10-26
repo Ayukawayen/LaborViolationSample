@@ -1,0 +1,25 @@
+.netAyukawayenLabor_icon {
+	display:inline-block !important;
+	float:none !important;
+	box-sizing:border-box !important;
+	
+	font-size:10px !important;
+	font-weight:bold !important;
+	font-family:initial !important;
+	
+	padding:0.25em 0.25em !important;
+	margin:0 0 0 0.5em !important;
+	min-width:1.5em !important;
+	height:1.5em !important;
+	line-height:1 !important;
+	border-radius:0.75em !important;
+	
+	text-align:center !important;
+	
+	background:#c00 !important;
+	color:#fff !important;
+}
+
+.netAyukawayenLabor_icon.v_0{
+	background:#0c0 !important;
+}

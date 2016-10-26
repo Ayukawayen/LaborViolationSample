@@ -1,0 +1,33 @@
+{
+	"applications": {
+		"gecko": {
+			"id": "labor-basic@Ayukawayen.net",
+			"strict_min_version": "45.0"
+		}
+	},
+	"name": "勞檢查詢資料使用範例",
+	"description": "勞檢查詢資料使用範例",
+	"version": "1.0",
+	"permissions": [
+		"https://sheets.googleapis.com/"
+	],
+	"icons": {
+		"16":  "image/icon16.png",
+		"32":  "image/icon32.png",
+		"48":  "image/icon48.png",
+		"96":  "image/icon96.png",
+		"128": "image/icon128.png"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"content_scripts": [{
+		"matches": [
+			"*://*.104.com.tw/*",
+			"*://104.com.tw/*"
+		],
+		"css": ["content.css"],
+		"js": [ "lib/dom.js", "content.js" ]
+	}],
+	"manifest_version": 2
+}

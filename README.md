@@ -25,9 +25,9 @@
 
 ## Google試算表
 
-**試算表連結**: <https://docs.google.com/spreadsheets/d/1uLR9eFePzLzlnkO1k1yh2-2_TJCOYGGEatGCQOgpz9M>
++ **試算表連結**: <https://docs.google.com/spreadsheets/d/1uLR9eFePzLzlnkO1k1yh2-2_TJCOYGGEatGCQOgpz9M>
 
-**試算表ID**: `1uLR9eFePzLzlnkO1k1yh2-2_TJCOYGGEatGCQOgpz9M`
++ **試算表ID**: `1uLR9eFePzLzlnkO1k1yh2-2_TJCOYGGEatGCQOgpz9M`
 
 ### 工作表資料結構
 

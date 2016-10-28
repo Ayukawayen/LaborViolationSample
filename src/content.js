@@ -69,12 +69,7 @@ chrome.runtime.sendMessage(
 				'title': title||'未發現違反勞基法記錄',
 			}, count);
 			
-			getLastLeafNode(node).appendChild(iconNode);
+			node.appendChild(iconNode);
 		});
 	}
 );
-
-function getLastLeafNode(node) {
-	if(!node.lastElementChild) return node;
-	return getLastLeafNode(node.lastElementChild);
-};

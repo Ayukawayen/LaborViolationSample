@@ -11,7 +11,7 @@ var cpRecords = {};
 refresh();
 
 function refresh() {
-	let range = "'索引'!A2:C";
+	let range = "'索引'!A2:E";
 	
 	let uri = `${apiUri}/${ssId}/values/${range}?key=${apiKey}`;
 	
@@ -28,8 +28,10 @@ function refresh() {
 		let sheetInfos = result.values.map((item) => {
 			return {
 				name:item[0],
-				lastModified:new Date(item[1]||0),
-				lastCheck:new Date(item[2]||0),
+				desc:item[1]||'',
+				authority:item[2]||'',
+				lastModified:new Date(item[3]||0),
+				lastCheck:new Date(item[4]||0),
 			}
 		});
 
@@ -59,12 +61,12 @@ function onSheetInfosGetted(sheetInfos) {
 		
 		cpRecords = {};
 		result.valueRanges.forEach((valueRange)=>{
-			let 資料集 = regex.exec(valueRange.range)[1];
+			let 工作表 = regex.exec(valueRange.range)[1];
 
 			valueRange.values.forEach((item)=>{
 				cpRecords[item[0]] = cpRecords[item[0]] || [];
 				cpRecords[item[0]].push({
-					資料集:資料集,
+					工作表:工作表,
 					條款:item[1],
 					內容:item[2],
 					文號:item[3],
@@ -77,7 +79,7 @@ function onSheetInfosGetted(sheetInfos) {
 		{
 			"臺中市政府民政局":[
 				{
-					"資料集":"臺中市",
+					"工作表":"臺中市",
 					"條款":"勞動基準法第32條第2項",
 					"內容":"延長勞工工時超過法令規定",
 					"文號":"府授勞動字第1050146620號",
@@ -142,7 +144,7 @@ function getCompanyRecords(args) {
 		"家福股份有限公司":{
 			"家福股份有限公司":[
 				{
-					"資料集":"宜蘭縣",
+					"工作表":"宜蘭縣",
 					"條款":"勞動基準法第49條",
 					"內容":"使女工從事夜間工作不符法定要件",
 					"文號":"府勞資字第1050025692號",

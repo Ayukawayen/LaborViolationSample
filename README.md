@@ -17,7 +17,9 @@
 [彰化縣](http://labor.chcg.gov.tw/07other/other01_con.asp?topsn=3197&data_id=14138)、
 [宜蘭縣](http://labor.e-land.gov.tw/cp.aspx?n=A727524B27DA3181)、
 [澎湖縣](http://www.penghu.gov.tw/society/home.jsp?contlink=content/20130222113242.jsp)、
-[中科園區](http://www.ctsp.gov.tw/chinese/01news/10statistics_view.aspx?v=1&fr=529&sn=1198)。
+[中科園區](http://www.ctsp.gov.tw/chinese/01news/10statistics_view.aspx?v=1&fr=529&sn=1198)、
+[臺北市性別平等法](http://bola.gov.taipei/ct.asp?xItem=94627873&ctNode=76327&mp=116003)、
+[臺北市職業安全衛生法](http://bola.gov.taipei/ct.asp?xItem=94627871&ctNode=76327&mp=116003)。
 
 解析後的資料儲存於Google試算表。
 

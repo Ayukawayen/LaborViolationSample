@@ -43,7 +43,7 @@ function refresh() {
 
 function onSheetInfosGetted(sheetInfos) {
 	let uri = `${apiUri}/${ssId}/values:batchGet?key=${apiKey}` + sheetInfos.reduce((result, item)=>{
-		return result + `&ranges='${item.name}'!A2:E`;
+		return result + `&ranges='${item.name}'!A1:E`;
 	}, '');
 	
 	let xhr = new XMLHttpRequest();

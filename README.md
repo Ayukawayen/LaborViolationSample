@@ -66,6 +66,8 @@ Chrome/Firefox Extension *(Javascript)*
 
 在 104.com.tw 網頁上的公司連結顯示違法記錄數量及內容。
 
+程式設定：將`background.js`的`const apiKey = 'YOUR_API_KEY';`修改為你的Google API Key。
+
 #### background.js
 
 #### content.js

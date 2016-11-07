@@ -11,7 +11,7 @@ var cpRecords = {};
 refresh();
 
 function refresh() {
-	let range = "'索引'!A2:E";
+	let range = "'索引'!A2:D";
 	
 	let uri = `${apiUri}/${ssId}/values/${range}?key=${apiKey}`;
 	
@@ -29,9 +29,8 @@ function refresh() {
 			return {
 				name:item[0],
 				desc:item[1]||'',
-				authority:item[2]||'',
-				lastModified:new Date(item[3]||0),
-				lastCheck:new Date(item[4]||0),
+				lastModified:new Date(item[2]||0),
+				lastCheck:new Date(item[3]||0),
 			}
 		});
 

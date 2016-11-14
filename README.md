@@ -10,6 +10,7 @@
 
 目前程式自動擷取解析的網頁如下：
 [臺北市](http://bola.gov.taipei/ct.asp?xItem=94627869&ctNode=76327&mp=116003)、
+[新北市](https://ilabor.ntpc.gov.tw/cloud/Violate/)、
 [桃園市](http://lhrb.tycg.gov.tw/home.jsp?id=373&mcustomize=onemessages_view.jsp&dataserno=201509090001)、
 [臺中市](http://www.labor.taichung.gov.tw/ct.asp?xItem=55333&ctNode=23053&mp=117010)、
 [臺南市](http://www.tainan.gov.tw/labor/page.asp?nsub=M2A400)、
@@ -19,7 +20,8 @@
 [澎湖縣](http://www.penghu.gov.tw/society/home.jsp?contlink=content/20130222113242.jsp)、
 [中科園區](http://www.ctsp.gov.tw/chinese/01news/10statistics_view.aspx?v=1&fr=529&sn=1198)、
 [臺北市性別平等法](http://bola.gov.taipei/ct.asp?xItem=94627873&ctNode=76327&mp=116003)、
-[臺北市職業安全衛生法](http://bola.gov.taipei/ct.asp?xItem=94627871&ctNode=76327&mp=116003)。
+[臺北市職業安全衛生法](http://bola.gov.taipei/ct.asp?xItem=94627871&ctNode=76327&mp=116003)、
+[新北市性別平等法](https://ilabor.ntpc.gov.tw/cloud/Violate/)。
 
 解析後的資料儲存於Google試算表。
 

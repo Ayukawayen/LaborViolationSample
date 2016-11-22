@@ -22,8 +22,6 @@ html, body {
 	
 	font-family:"Helvetica", "Arial", "思源黑體", "微軟正黑體", sans-serif;
 }
-@media screen and (min-width: 1024px) { html, body {font-size:18px;} }
-@media screen and (min-width: 1280px) {	html, body {font-size:20px;} }
 
 #searchBar    {display:block; position:absolute; top:0; height:3rem; left:0; right:0;}
 #searchResult {display:block; position:absolute; top:3rem; bottom:0; left:0; right:0;}

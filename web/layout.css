@@ -22,6 +22,8 @@ html, body {
 	
 	font-family:"Helvetica", "Arial", "思源黑體", "微軟正黑體", sans-serif;
 }
+@media screen and (min-width: 1024px) { html, body {font-size:18px;} }
+@media screen and (min-width: 1280px) {	html, body {font-size:20px;} }
 
 #searchBar    {display:block; position:absolute; top:0; height:3rem; left:0; right:0;}
 #searchResult {display:block; position:absolute; top:3rem; bottom:0; left:0; right:0;}
@@ -123,15 +125,56 @@ html, body {
 
 
 #searchResult .resultList >li .recordList {
-	padding:0.25rem 0.5rem 0 2rem;
+	margin:0.25rem 0.5rem 0 2rem;
 }
 
 #searchResult .resultList >li .recordList >li span.條款 {
 	font-weight:bold;
 }
 
-#searchResult .resultList >li .recordList >li span.內容:before {content:' ';}
-#searchResult .resultList >li .recordList >li span.主管:before {content:' (';}
-#searchResult .resultList >li .recordList >li span.文號:before {content:' ';}
-#searchResult .resultList >li .recordList >li span.日期:before {content:' - ';}
-#searchResult .resultList >li .recordList >li span.日期:after {content:')';}
+@media screen and (max-width: 799px) {
+	#searchResult .resultList >li .recordList >li span.內容:before {content:' ';}
+	#searchResult .resultList >li .recordList >li span.主管:before {content:' (';}
+	#searchResult .resultList >li .recordList >li span.文號:before {content:' ';}
+	#searchResult .resultList >li .recordList >li span.日期:before {content:' - ';}
+	#searchResult .resultList >li .recordList >li span.日期:after {content:')';}
+}
+
+@media screen and (min-width: 800px) {
+	#searchResult .resultList >li .recordList {
+		max-width:60rem;
+		
+		border-width:1px;
+		border-style:solid;
+	}
+	#searchResult .resultList >li .recordList >li {
+		width:100%;
+		
+		border-width:1px;
+		border-style:solid;
+	}
+	#searchResult .resultList >li .recordList >li >span {
+		display:inline-block;
+		padding:0 0.25rem;
+		
+		vertical-align:middle;
+		word-break:break-word;
+	}
+	/*fallback*/
+	#searchResult .resultList >li .recordList >li span.條款 {width:20.5%;}
+	#searchResult .resultList >li .recordList >li span.內容 {width:35.5%;}
+	#searchResult .resultList >li .recordList >li span.主管 {width: 7.0%;}
+	#searchResult .resultList >li .recordList >li span.文號 {width:25.5%;}
+	#searchResult .resultList >li .recordList >li span.日期 {width:10.5%;}
+
+	#searchResult .resultList >li .recordList >li span.條款 {width:calc(25% - 2.25rem);}
+	#searchResult .resultList >li .recordList >li span.內容 {width:calc(50% - 8.25rem);}
+	#searchResult .resultList >li .recordList >li span.主管 {width:calc( 0% + 3.75rem);}
+	#searchResult .resultList >li .recordList >li span.文號 {width:calc(25% + 0.75rem);}
+	#searchResult .resultList >li .recordList >li span.日期 {width:calc( 0% + 5.75rem);}
+
+
+	#searchResult .resultList >li .recordList >li span.主管 {text-align:center;}
+	#searchResult .resultList >li .recordList >li span.文號 {text-align:center;}
+	#searchResult .resultList >li .recordList >li span.日期 {text-align:right;}
+}

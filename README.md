@@ -71,5 +71,11 @@ Chrome/Firefox Extension *(Javascript)*
 程式設定：將`background.js`的`const apiKey = 'YOUR_API_KEY';`修改為你的Google API Key。
 
 #### background.js
++ 向索引工作表讀取工作表索引
++ 向各資料集工作表讀取違法記錄
++ 接受`content.js`的查詢要求，回傳相關的違法記錄
 
 #### content.js
++ 搜尋求職網頁上的公司名稱節點
++ 以公司名稱向`background.js`查詢違法記錄
++ 顯示違法記錄於求職網頁

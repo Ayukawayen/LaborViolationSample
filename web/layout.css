@@ -52,6 +52,7 @@ html, body {
 	font-size:1.6rem;
 	
 	text-align:center;
+	cursor:default;
 }
 
 
@@ -70,6 +71,7 @@ html, body {
 	padding:0.25rem 0;
 	
 	text-align:center;
+	cursor:pointer;
 }
 #searchResult >header >a >span {
 	display:block;
@@ -111,10 +113,12 @@ html, body {
 	width:2rem;
 	
 	text-align:center;
+	cursor:default;
 }
 
 #searchResult .resultList >li >header >h3 {
 	font-weight:bold;
+	cursor:pointer;
 }
 
 

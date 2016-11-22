@@ -1,0 +1,132 @@
+* {
+	font-size:inherit;
+	font-weight:inherit;
+	font-family:inherit;
+	
+	background:inherit;
+	background-color:inherit;
+	color:inherit;
+	
+	margin:0;
+	padding:0;
+	border-width:0;
+	
+	box-sizing:border-box;
+	
+	overflow:hidden;
+}
+
+html, body {
+	font-size:16px;
+	
+	font-family:"Helvetica", "Arial", "思源黑體", "微軟正黑體", sans-serif;
+}
+
+#searchBar    {display:block; position:absolute; top:0; height:3rem; left:0; right:0;}
+#searchResult {display:block; position:absolute; top:3rem; bottom:0; left:0; right:0;}
+#status       {display:block; position:absolute; top:3rem; bottom:0; left:0; right:0;}
+
+#status {
+	font-size:1.5rem;
+	padding:0.5rem 0 0;
+	
+	text-align:center;
+}
+#status.refreshed {
+	display:none;
+}
+
+#searchBar .clear {display:block; position:absolute; top:0.25rem; bottom:0.25rem; right:0.25rem; width:2.5rem;}
+
+#searchBar .query {
+	font-size:1.25rem;
+	
+	width:100%;
+	height:100%;
+	
+	padding:0 3.5rem 0 0.5rem;
+}
+
+#searchBar .clear {
+	font-size:1.6rem;
+	
+	text-align:center;
+}
+
+
+#searchResult >header     {display:block; position:absolute; top:0; height:2rem; left:0; right:0;}
+#searchResult .resultList {display:block; position:absolute; top:2rem; bottom:0; left:0; right:0; overflow-y:auto;}
+
+#searchResult >header .summary {display:block; position:absolute; top:0; height:100%; left:0; right:8rem;}
+#searchResult >header >a {display:block; position:absolute; top:0; height:100%; width:3.75rem;}
+#searchResult >header .close {right:4.25rem;}
+#searchResult >header .open  {right:0.25rem;}
+
+#searchResult >header .summary {
+	padding:0.25rem 0.25rem;
+}
+#searchResult >header >a {
+	padding:0.25rem 0;
+	
+	text-align:center;
+}
+#searchResult >header >a >span {
+	display:block;
+	width:100%;
+	height:100%;
+	
+	border-width:1px;
+	border-style:solid;
+	border-radius:0.25rem;
+}
+
+
+#searchResult .resultList >li.hidden {
+	display:none;
+}
+#searchResult .resultList >li .recordList {
+	display:none;
+}
+#searchResult .resultList >li.opened .recordList {
+	display:block;
+}
+
+#searchResult .resultList >li {
+	padding:0.5rem 0;
+	
+	border-width:0 0 1px 0;
+	border-style:dotted;
+}
+
+#searchResult .resultList >li >header {
+	font-size:1.25rem;
+	line-height:1.25;
+}
+
+#searchResult .resultList >li >header .hide {
+	display:block;
+	float:left;
+	
+	width:2rem;
+	
+	text-align:center;
+}
+
+#searchResult .resultList >li >header >h3 {
+	font-weight:bold;
+}
+
+
+#searchResult .resultList >li .recordList {
+	padding:0.25rem 0.5rem 0 2rem;
+}
+
+#searchResult .resultList >li .recordList >li span.條款 {
+	font-weight:bold;
+}
+
+#searchResult .resultList >li .recordList >li span.內容:before {content:' ';}
+#searchResult .resultList >li .recordList >li span.主管:before {content:' (';}
+#searchResult .resultList >li .recordList >li span.文號:before {content:' ';}
+#searchResult .resultList >li .recordList >li span.日期:before {content:' - ';}
+#searchResult .resultList >li .recordList >li span.日期:after {content:')';}
